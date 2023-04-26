@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cypress:run": "cypress run --browser chrome"
+    "cypress:run": "cypress run --browser chrome",
+    "testing": "BROWSER=none start-server-and-test start http://localhost:3000 cypress:run"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^12.10.0"
+    "cypress": "^12.10.0",
+    "start-server-and-test": "^2.0.0"
   }
 }
